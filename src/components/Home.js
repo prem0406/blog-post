@@ -16,7 +16,8 @@ class Home extends Component {
               <Link to={"/post/" + post.id}>
                 <span className="card-title red-text">{post.title}</span>
               </Link>
-              <p>{post.body}</p>
+              <p>{post.body.substring(1, 150)}</p>
+              <Link to={"/post/" + post.id}>Read more...</Link>
             </div>
           </div>
         );

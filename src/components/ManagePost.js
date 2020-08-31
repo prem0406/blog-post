@@ -15,11 +15,12 @@ function ManagePost(props) {
   };
 
   function isFormValid() {
-    const { title, body } = post;
+    const { title, body, category } = post;
     const errors = {};
 
-    if (!title) errors.title = "Title is required";
-    if (!body) errors.body = "Body is required";
+    if (!title) errors.title = "Title is required*";
+    if (!body) errors.body = "Body is required*";
+    if (!category) errors.category = "Category is required*";
 
     setErrors(errors);
 
@@ -55,7 +56,7 @@ const mapStateToProps = (state, ownProps) => {
   const post =
     id && state.length > 0
       ? getPostById(state, id)
-      : { id: null, title: "", body: "" };
+      : { id: null, title: "", body: "", category: "" };
   return { post };
 };
 

@@ -45,3 +45,16 @@ form input[type="text"]:not(.browser-default) {
 .post .btn {
   margin-left: 10px;
 }
+
+.container .post {
+  line-height: 2.5;
+}
+
+.container .post .content {
+  margin-bottom: 70px;
+}
+
+nav a.active {
+  background-color: maroon;
+  transition: all ease 0.5s;
+}

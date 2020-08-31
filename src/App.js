@@ -6,11 +6,13 @@ import PostDetail from "./components/PostDetail";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ManagePost from "./components/ManagePost";
+import LikeContexProvider from "./contexts/LikeContext";
 
 function App() {
   return (
     <div className="App">
       <Navbar />
+      <LikeContexProvider>
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/post/:post_id" component={PostDetail} />
@@ -18,6 +20,7 @@ function App() {
         <Route path="/manage-post" component={ManagePost} />
       </Switch>
       <ToastContainer autoClose={3000} hideProgressBar />
+      </LikeContexProvider>
     </div>
   );
 }
