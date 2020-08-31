@@ -8,6 +8,10 @@ This is a “Blog post app” using React and Redux. Application displays the li
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Surge URL
+
+`http://bored-spade.surge.sh/`
+
 ## Available Scripts
 
 In the project directory, you can run:
