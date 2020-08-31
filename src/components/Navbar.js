@@ -17,9 +17,6 @@ function Navbar(props) {
           <li>
             <NavLink to="/manage-post">Create New Post</NavLink>
           </li>
-          <li>
-            <NavLink to="/about">About</NavLink>
-          </li>
         </ul>
       </div>
     </nav>

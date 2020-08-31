@@ -14,6 +14,16 @@ const AddForm = ({ post, onSave, onChange, errors = {} }) => {
         </label>
         <input type="text" id="title" value={post.title} onChange={onChange} />
 
+        <label htmlFor="category">
+          <div className="label">Category</div>
+        </label>
+        <input
+          type="text"
+          id="category"
+          value={post.category}
+          onChange={onChange}
+        />
+
         {errors.body && <div className="alert alert-danger">{errors.body}</div>}
         <label htmlFor="body">
           <div className="label">Body</div>
